@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Madrid Club</title>
-    <link rel="stylesheet" href="styles.css">
     <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Madrid Club</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+    </head>    
 <body>
     <header>
         <nav>
@@ -26,17 +25,25 @@
         </nav>
     </header>
     
-    <section class="hero">
-        <h1>Selamat Datang di Dunia Real Madrid</h1>
-        <p>Jelajahi sejarah, prestasi, dan pemain legendaris klub terbaik dunia.</p>
-    </section>
-
+    
     <main>
+
+        
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Selamat Datang di Dunia Real Madrid</h1>
+                <p>Jelajahi sejarah, prestasi, dan pemain legendaris klub terbaik dunia.</p>
+                <a href="#sejarah" class="cta-button" id="scroll-btn">Jelajahi Sekarang</a>
+            </div>
+        </section>
+        
         <section id="sejarah" class="section-box">
             <h2>Sejarah Real Madrid</h2>
             <p>Real Madrid didirikan pada 6 Maret 1902 oleh Juan Padrós dan Julián Palacios di Madrid, Spanyol. Klub ini awalnya dikenal sebagai Madrid Football Club sebelum mendapatkan gelar "Real" (kerajaan) dari Raja Alfonso XIII pada tahun 1920.</p>
             <p>Real Madrid mulai menorehkan prestasi besar sejak tahun 1950-an, dipimpin oleh Alfredo Di Stéfano, Ferenc Puskás, dan Francisco Gento, yang membawa klub memenangkan lima gelar Liga Champions berturut-turut.</p>
         </section>
+        
 
         <section id="skuad" class="section-box">
             <h2>Skuad & Pelatih</h2>
@@ -70,26 +77,58 @@
         <section id="galeri" class="gallery">
             <h2>Galeri & Fakta Unik</h2>
             <div class="gallery-grid">
-                <img src="rm1.jpeg" alt="Foto Bersejarah - Momen Kejayaan">
-                <img src="rm1.jpeg" alt="Trofi Liga Champions - Koleksi Terbesar di Dunia">
-                <img src="rm1.jpeg" alt="Santiago Bernabéu - Rumah Para Legenda">
+                <div class="gallery-item">
+                    <img src="rm1.jpeg" alt="Momen Kejayaan">
+                    <div class="overlay">
+                        <h3>Momen Kejayaan</h3>
+                        <p>Perjalanan epik Real Madrid dalam sejarah sepak bola.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="rm1.jpeg" alt="Trofi Liga Champions">
+                    <div class="overlay">
+                        <h3>Trofi Liga Champions</h3>
+                        <p>Real Madrid memiliki koleksi trofi UCL terbanyak.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="rm1.jpeg" alt="Santiago Bernabéu">
+                    <div class="overlay">
+                        <h3>Santiago Bernabéu</h3>
+                        <p>Markas megah Real Madrid sejak 1947.</p>
+                    </div>
+                </div>
             </div>
-            <p>Fakta unik tentang Real Madrid:</p>
-            <ul>
-                <li>Real Madrid adalah klub pertama yang memenangkan lima Liga Champions berturut-turut (1956-1960).</li>
-                <li>Klub ini adalah satu dari sedikit tim yang belum pernah terdegradasi dari La Liga sejak kompetisi dimulai.</li>
-                <li>Real Madrid pernah memiliki trio legendaris "BBC" (Bale, Benzema, Cristiano) yang mendominasi sepak bola Eropa.</li>
+        
+            <p class="facts-title">Fakta unik tentang Real Madrid:</p>
+            <ul class="facts-list">
+                <li>Klub pertama yang memenangkan lima Liga Champions berturut-turut (1956-1960).</li>
+                <li>Belum pernah terdegradasi dari La Liga sejak kompetisi dimulai.</li>
+                <li>Trio legendaris "BBC" (Bale, Benzema, Cristiano) pernah mendominasi sepak bola Eropa.</li>
             </ul>
         </section>
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Real Madrid Fans. All Rights Reserved.</p>
+        <div class="team-gallery">
+            <h3>Anggota & Tim</h3>
+            <div class="team-grid">
+                <div class="team-member"><img src="member1.jpg" alt="Nama 1"><p>Elfrrizt</p></div>
+                <div class="team-member"><img src="member2.jpg" alt="Nama 2"><p>Marsya</p></div>
+                <div class="team-member"><img src="member1.jpg" alt="Nama 3"><p>Elfrrizt</p></div>
+                <div class="team-member"><img src="member2.jpg" alt="Nama 4"><p>Marsya</p></div>
+                <div class="team-member"><img src="member1.jpg" alt="Nama 5"><p>Elfrrizt</p></div>
+                <div class="team-member"><img src="member2.jpg" alt="Nama 6"><p>Marsya</p></div>
+            </div>
+            <p>Nama Kelompok: Real Madrid Squad</p>
+        </div>
         <div class="social-icons">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
         </div>
+        <p>&copy; 2024 Real Madrid Fans. All Rights Reserved.</p>
     </footer>
     
 
