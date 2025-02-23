@@ -119,7 +119,7 @@ header {
 
 .hero {
     position: relative;
-    background: url('rmhero.webp') no-repeat center center/cover;
+    background: url('img/rmhero.webp') no-repeat center center/cover;
     height: 90vh;
     display: flex;
     align-items: center;
